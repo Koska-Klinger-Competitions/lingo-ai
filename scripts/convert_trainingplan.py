@@ -5,6 +5,7 @@ import json
 if len(sys.argv) != 3:
     print("Usage: convert_trainingplan.py <plan.md> <plan.json>")
 
+# Reads in second command line argument
 value = open(sys.argv[1]).read()
 
 dictified = markdown_to_json.dictify(value)
